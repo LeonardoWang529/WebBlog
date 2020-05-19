@@ -1,12 +1,10 @@
 ---
-title: Web-开发经验和教训
+title: Web 开发经验和教训
 date: 2017-12-06 08:19:23
 tags:
 - web
-categories: 'Coding'
+categories: 'Web Front'
 ---
-
-2017-12-05
 
 View: Layout -> JS: Controller -> JS:server -> php: RestServer -> php: include function
 以下是实现 整套restful function的从最前到最后的操作流程
@@ -19,7 +17,7 @@ View: Layout -> JS: Controller -> JS:server -> php: RestServer -> php: include f
 <input type="file" name="file" class="upfile" id="upfile" onchange="angular.element(this).scope().uploadFile(this.files)" style="display: none;"/>
 {% endcodeblock %}
 
-这里的 data-ng-click="browseFile('.upfile') call 的是 js file 里面的 $scope.browseFile = function (fileInputClass) 
+这里的 data-ng-click="browseFile('.upfile') call 的是 js file 里面的 $scope.browseFile = function (fileInputClass)
 在input 里面 onchange call 到的是 $scope.uploadFile = function (files) ； 这个files将会是一个jason object， 可以通过 files[0]['type'] 来 取得它的情况
 
 2. 在js曾实现browseFile 和 uploadFile
@@ -90,7 +88,7 @@ app.factory('patientService', function($http, $sessionStorage, $rootScope,common
 ?>
 {% endcodeblock %}
 
-在这个层面里，有security 层级。 要么用 token 等通过security，要么把 这个 restcall 加入到 能绕过 security的list中。 
+在这个层面里，有security 层级。 要么用 token 等通过security，要么把 这个 restcall 加入到 能绕过 security的list中。
 
 5. 使用 include 下面的不同 php 文件内的 function 执行 php 操作 或与 DB互动
 
@@ -114,4 +112,3 @@ class LFWebExtraFunctionRest {
 
 在这个特定的例子里，传入的值是一个 FILES 所以可以用 $_FILES 去取值
 这里我们执行的操作是简单的移动到另一个文件夹下。
-

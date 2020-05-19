@@ -1,5 +1,5 @@
 ---
-title: Git-remote-terminal-login
+title: Git remote terminal login
 date: 2020-03-28 23:22:55
 tags:
 - Git
@@ -19,4 +19,3 @@ categories: 'Git'
 里可以找到。删除这个证书，在重新运行。账号转换才可以完成。
 
 https://help.github.com/en/github/using-git/updating-credentials-from-the-osx-keychain
-

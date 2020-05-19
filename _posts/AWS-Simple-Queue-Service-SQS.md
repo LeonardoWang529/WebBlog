@@ -1,10 +1,10 @@
 ---
 title: AWS Simple Queue Service (SQS)
 date: 2017-11-15 09:31:53
-tags: 
+tags:
 - AWS
 - SQS
-categories: "Coding"
+categories: "Web Server"
 ---
 
 Amazon Simple Queue Service (SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications.
@@ -27,7 +27,7 @@ BroadCasting 将会 阻碍 instance的 正常工作。
 ###  问题步骤
 在使用 client -> ReceiveMessage(); 的时候会获得一个nested jason：
 无法通过jason_decode直接把数据取出，原本Document内也没有说明。
-解决方法如下: 
+解决方法如下:
       **使用$result->getPath('Message/0/date');**
 
 Getting nested values

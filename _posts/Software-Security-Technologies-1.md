@@ -1,8 +1,8 @@
 ---
-title: Software_Security_Technologies_1
+title: Software Security Technologies
 date: 2019-09-28 22:50:45
 tags:
-- Security Defence
+- Security
 categories: 'Security'
 ---
 
@@ -15,16 +15,10 @@ Privilege Sepration的核心思想就和名字一样，把功能分散成不同�
 The advantage of this is only couple processes are working in the root privilege(others are working under low privilege). Even if the hacker gets into the input or output processes, due to the data address change, privilege drop and root dir change, he can not change the dirct and go anywhere. It performs like a jail, here we only can do what the code needs to do.
 
 required linux functions and what is for:
-	fork() -- Functions separation, privilege dropping. 
+	fork() -- Functions separation, privilege dropping.
 	exec() -- allows the OS to randomize the child’s address space
 	chroot() -- Provides a restricted view of the filesystem
 	setuid() -- change user droping privilege
-	mkfifo() -- 
+	mkfifo() --
 
 A good example is to look at is ntpd(). We first need to find what function does it need: read files(dns), set system Clocks, inital socket connection. here set system clock require privilege, we use it as the main process, other processes will be separate from there.
-
-
-
-
-
-

@@ -1,9 +1,9 @@
 ---
-title: Formula_in_Data_Anaysis_for_ML_2
+title: Formula in Data Anaysis for ML
 tags:
   - Data Analytic
   - Formula
-categories: Machine Learn
+categories: 'Machine Learning'
 date: 2019-09-28 02:13:57
 ---
 
@@ -22,11 +22,11 @@ Content-based recommendations
 Neighborhood-based collaborative filtering
  -User-based Collaborative Filtering
 	INTUITION: Users with similar ratings/purchases have analogous interests
-	  • Phase1:NeighborhoodFormation	
+	  • Phase1:NeighborhoodFormation
 	     Mean-centered
 		1. take average
 		2. each mins avg num
-	     Cos similarity	
+	     Cos similarity
 		3. cos simiarlarity between each people and me on each iteam.
 		4.find highest 2 person
 	  • Phase2:Recommendationphase
@@ -43,13 +43,8 @@ Neighborhood-based collaborative filtering
 	     Mean-centered
 		1. take average for all the rating for each person
 		2. each mins avg num on this col		
-	  • Adjusted cosine similarity	
+	  • Adjusted cosine similarity
 	     Adjusted Cos similarity
-		3. cos simiarlarity between each iteam and my unreated iteam 
+		3. cos simiarlarity between each iteam and my unreated iteam
 	  • Recommendationphase
 		4. based on adjusted cos value, find the cloest rating iteam from the film I have rated. Use these rating * ralated cos val. then add them together to get sum. Add the cos value we just used take abs value and add together to get sum1. use sum/sum1. in the end plus the mean value of mine. get the perdict rating. (根据adjusted cos值，找出和你要预测的电影相关性最高的几部你已经rate过的电影。分别用这几部电影的rate值乘以相对应的cos值，然后相加计算出一个sum。再将刚才用到的cos值，取绝对值后相加算一个sum1. 用sum/sum1. 最后加上我的rating的平局值。
-
-
-	     
-
-

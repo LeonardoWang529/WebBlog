@@ -1,9 +1,8 @@
 ---
 title: Coding Tips
 date: 2017-11-15 23:39:50
-tags: 
-- Tips
-categories: 'Coding'
+tags: 老农功
+categories: 'Life'
 ---
 
 1. Third party lib initial should be placed or created outside of main code.
@@ -12,7 +11,7 @@ Reason: Third party lib like aws is alway updating. every time updating, we need
 
 2. 第三方lib 要用wrap在外面wrap起来使用，不然升级要一个地方一个地方改
 
-3. 问题，有的时候自己想一个问题，想不清楚，思想也不集中。但是一问别人，一开口，自己就想清楚了，就知道怎么查了，知道答案了。怎么回事怎么办？ 
+3. 问题，有的时候自己想一个问题，想不清楚，思想也不集中。但是一问别人，一开口，自己就想清楚了，就知道怎么查了，知道答案了。怎么回事怎么办？
 	答：这是因为想问题困在一个细节上了，想了太久，困住了太久，眼睛里只有这个小问题。
 	这个时候要 强迫自己 跳出小细节，在大框架下来思考问题。
 	开口问别人，实际上就是跳出了小细节，在大框架下思考。
@@ -34,5 +33,4 @@ AdminDocter -> UserProfile + Treatment
 
 9. 永远把问题缩到，简化到最小点，在debug
 
-10. 
-
+10.

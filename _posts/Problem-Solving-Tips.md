@@ -2,7 +2,7 @@
 title: Problem Solving Tips
 date: 2017-12-11 08:23:24
 tags:
-- Problemsovleing
+- ProblemSovleing
 - Thought
 - Abstract
 categories: 'Life'

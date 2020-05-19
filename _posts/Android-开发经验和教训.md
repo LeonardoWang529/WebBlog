@@ -1,9 +1,9 @@
 ---
-title: Android-开发经验和教训
+title: Android 开发经验和教训
 date: 2017-12-01 08:03:17
 tags:
 - Android
-categories: 'Coding'
+categories: 'Android'
 ---
 简单记录一下今天在安卓开发上的经验教训。
 所完成feature：Personal Goal progress page。

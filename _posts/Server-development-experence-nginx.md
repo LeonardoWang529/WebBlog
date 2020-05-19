@@ -1,9 +1,9 @@
 ---
-title: Server-development-experence-nginx
+title: Server development Experience NGINX
 date: 2019-03-09 05:49:13
 tags:
 - server
-categories: 'Coding'
+categories: 'Web Server'
 ---
 
 In the past couple days, I am developing a full website, from front to end.
@@ -17,10 +17,10 @@ path: /etc/nginx/nginx.conf
     server {
         server_name tamedogisnotdog.com;
         root /var/www/html/snowtools;
-	
+
 	# redirct all the call after v1 to index.php under v1
         rewrite ^/external/RestServer/v1/(.*)$ /external/RestServer/v1/index.php;      
-        
+
 	# force php to run php as a script, instead of txt file
 	location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
@@ -32,7 +32,7 @@ I added this in http {}
 and restart the nginx with nginx -s stop and nginx.
 Then the problem is sloved.
 
-So snippets is belong to nginx: https://www.nginx.com/resources/wiki/start/topics/examples/fastcgiexample/ 
+So snippets is belong to nginx: https://www.nginx.com/resources/wiki/start/topics/examples/fastcgiexample/
 include 类似于 java 的 import pacage.
 fastcig pass is also belong to nginx: use fastcig pass to process some data from  php fpm ，
 unix:/run/php/php7.0-fpm.sock is belong to php
@@ -42,13 +42,10 @@ in nginx fastcgi pass is a commend  directive，like
 {% codeblock %}
 <section> {
 
-  <directive> <parameters>; 
+  <directive> <parameters>;
 
 }
 {% endcodeblock %}
 
 Reference:
 https://stackoverflow.com/questions/2936260/what-language-are-nginx-conf-files
-
-
-

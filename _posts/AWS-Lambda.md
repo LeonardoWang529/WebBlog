@@ -4,7 +4,7 @@ date: 2017-11-30 00:57:54
 tags:
 - AWS
 - Lambda
-categories: "Coding"
+categories: "Web Server"
 ---
 
 AWS Lambda is a web servers that allow you to run code without thinking about servers.

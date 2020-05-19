@@ -4,10 +4,10 @@ date: 2017-11-17 06:37:53
 tags:
 - Android
 - PlugIn
-categories: 'Coding'
+categories: 'Android'
 ---
-Chartengine is an Android data -> chart plugin. 
-Charting library for Android applications. Automatically exported from code.google.com/p/achartengine.AChartEngine is a charting library for Android applications. 
+Chartengine is an Android data -> chart plugin.
+Charting library for Android applications. Automatically exported from code.google.com/p/achartengine.AChartEngine is a charting library for Android applications.
 
 Its major components are used as follow:
 {% codeblock lang:java%}
@@ -18,7 +18,7 @@ mChartView = ChartFactory.getLineChartView(mContext,mDataset,mRenderer);
 {% endcodeblock %}
 ### XYMultipleSeriesDataset:
 This should be a list that contain one or more DataSourceObject.
-For example:(Note: This code is just example, do not dirctly copy and use) 
+For example:(Note: This code is just example, do not dirctly copy and use)
 ```
 public XYMultipleSeriesDataset getDataSet(){
 	XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
@@ -36,7 +36,7 @@ For example:
 public XYMultipleSeriesRenderer getRenderer(){
 	XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
 	XYSeriesRenderer r = new XYSeriesRenderer();
-	r.setColor; ... etc 
+	r.setColor; ... etc
 	render.addSeriesRenderer(r);
 	return render;
 }

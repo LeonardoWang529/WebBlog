@@ -1,9 +1,9 @@
 ---
-title: Server-development-experence-Crontab
+title: Server development Experience Crontab
 date: 2019-02-26 06:49:36
 tags:
 - server
-categories: 'Coding'
+categories: 'Web Server'
 ---
 
 When I was writing a crontab today on linux system, the crontab never runned. Although I have follow the rule of crontab.
